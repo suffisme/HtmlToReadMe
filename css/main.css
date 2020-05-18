@@ -1,9 +1,9 @@
 body {
   overflow-x: hidden;
-  background-color: green;
+  background-color: black;
 }
 
-body .row {
+body .first {
   background-color: black;
 }
 
@@ -30,5 +30,26 @@ body .half button {
 body .half h1 {
   font-family: 'Balsamiq Sans', cursive;
   font-size: 50px;
+}
+
+body .half h4 {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+body .second {
+  background-color: black;
+}
+
+body .second h1 {
+  margin-top: 20%;
+  font-family: 'Balsamiq Sans';
+}
+
+body .second h4 {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
 }
 /*# sourceMappingURL=main.css.map */
