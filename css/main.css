@@ -1,0 +1,34 @@
+body {
+  overflow-x: hidden;
+  background-color: green;
+}
+
+body .row {
+  background-color: black;
+}
+
+body .half {
+  background-color: white;
+}
+
+body .half img {
+  margin-top: 25%;
+}
+
+body .half button {
+  background-color: black;
+  color: white;
+  outline: none;
+  margin-top: 5%;
+  margin-bottom: auto;
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+  border: none;
+}
+
+body .half h1 {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 50px;
+}
+/*# sourceMappingURL=main.css.map */
