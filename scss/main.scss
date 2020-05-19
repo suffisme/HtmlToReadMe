@@ -36,7 +36,7 @@ body{
     }
 
     .second{
-        background-color: black;
+       
         h1{
             margin-top: 20%;
             font-family: 'Balsamiq Sans';
@@ -45,6 +45,33 @@ body{
             padding-left: 10%;
             padding-right: 10%;
             padding-top: 5%;
+        }
+        
+    }
+    .three{
+       
+        h1{
+            margin-top: 5%;
+            font-family: 'Balsamiq Sans';
+        }
+        h4{
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 5%;
+        }
+        .editor{
+            
+            .edit{
+                margin-top:5%;
+                max-width: 70%;
+                border: 3px;
+                padding: 1%;
+                border-style: solid;
+                border-color: black;
+                color: white;
+               background-color: black;
+            }
+            
         }
         
     }
