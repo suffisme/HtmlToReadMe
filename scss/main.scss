@@ -64,12 +64,22 @@ body{
             .edit{
                 margin-top:5%;
                 max-width: 70%;
-                border: 3px;
-                padding: 1%;
+                border-top: 20px;
+                border-left: 15px;
+                border-right: 15px;
+                border-bottom:15px;
+                padding: 2%;
                 border-style: solid;
-                border-color: black;
+                border-color: #333542;
                 color: white;
-               background-color: black;
+               background-color: #1d1e22;
+
+               .tagone{
+                   color: darkorange;
+               }
+               .tagdata{
+                   color: lightgreen;
+               }
             }
             
         }
