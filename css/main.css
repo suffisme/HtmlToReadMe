@@ -81,4 +81,12 @@ body .three .editor .edit .tagone {
 body .three .editor .edit .tagdata {
   color: lightgreen;
 }
+body .fourth h1 {
+  font-family: 'Balsamiq Sans';
+   margin-top: 5%;
+}
+body .fourth p{
+  font-family: 'Balsamiq Sans', cursive;
+}
+
 /*# sourceMappingURL=main.css.map */
