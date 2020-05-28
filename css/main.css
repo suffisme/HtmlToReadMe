@@ -81,12 +81,25 @@ body .three .editor .edit .tagone {
 body .three .editor .edit .tagdata {
   color: lightgreen;
 }
-body .fourth h1 {
-  font-family: 'Balsamiq Sans';
-   margin-top: 5%;
-}
-body .fourth p{
-  font-family: 'Balsamiq Sans', cursive;
+
+body .bottom-div {
+  margin-top: 100px;
 }
 
+body .bottom-div footer {
+  background-color: black;
+}
+
+body .bottom-div footer .divButton button {
+  font-size: 36px;
+  background-color: black;
+  border: 1px solid white;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+body .bottom-div footer .footer-image img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

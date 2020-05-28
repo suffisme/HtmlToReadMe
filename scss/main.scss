@@ -85,6 +85,25 @@ body{
         }
         
     }
-    
+    .bottom-div{
+        margin-top:100px;
+        footer{
+            background-color: black;
+
+            .divButton{button{
+                font-size: 36px;
+                background-color: black;
+                border: 1px solid white;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: white
+            }}
+            .footer-image{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
     
 }
