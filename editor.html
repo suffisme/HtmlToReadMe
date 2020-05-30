@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HtmlToReadMe Editor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HtmlToReadMe Editor</title>
+  <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js"></script>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js"></script>
-<style>
-    
-html,body { margin:0; padding:0; height:100%; width:100%; overflow: hidden;}
+    #editor {
+      height: 100%;
+      width: 50%;
+      display: inline-block;
+    }
 
-#editor {
-    height: 100%;
-    width:50%;
-    display:inline-block;
-}
+    #container {
+      height: 80%;
+      margin: 3%;
+      width: 90%;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
 
-#container {
-    height: 80%;
-    margin: 3%;
-	width:90%;
-  white-space : nowrap; 
-  overflow : hidden;
-  position:relative;
-}
+    #iframe {
+      height: 100%;
+      display: inline-block;
+      width: 50%;
+    }
 
-#iframe {
-	height:100%;
-	display:inline-block;
-	width:50%;
-}
-
-.ace_editor .ace_marker-layer .ace_bracket { display: none }
-
-</style>
+    .ace_editor .ace_marker-layer .ace_bracket {
+      display: none
+    }
+  </style>
 </head>
-   <body>
-       <center><h1>The Work Page</h1></center>
-    <div id='container'>
 
-        <div id="editor">
-        </div>
-      
-        <iframe id='iframe' frameBorder="2">
-        </iframe>
-      </div>
-      <script>
-         
+<body>
+  <center>
+    <h1>The Work Page</h1>
+  </center>
+  <div id='container'>
 
-function setupEditor()
-{
-  window.editor = ace.edit("editor");
-  editor.setTheme("ace/theme/monokai");
-  editor.getSession().setMode("ace/mode/html");
-  editor.setValue(`<!DOCTYPE html>
+    <div id="editor">
+    </div>
+
+    <iframe id='iframe' frameBorder="2">
+    </iframe>
+  </div>
+  <script>
+    function setupEditor() {
+      window.editor = ace.edit("editor");
+      editor.setTheme("ace/theme/monokai");
+      editor.getSession().setMode("ace/mode/html");
+      editor.setValue(`<!DOCTYPE html>
 <html>
 <body>
 
 </body>
-</html>`,1); 
+</html>`, 1);
 
-  editor.focus();
-   
-  editor.setOptions({
-    fontSize: "16pt",
+      editor.focus();
+
+      editor.setOptions({
+        fontSize: "16pt",
       });
 
-}
+    }
 
-setupEditor();
-  
-      </script>
+    setupEditor();
+  </script>
 </body>
+
 </html>
